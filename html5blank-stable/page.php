@@ -10,18 +10,20 @@
 		<section>
 
 		<div class="page_heading">
-<?php
- if ( has_post_thumbnail()) {
-    $full_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full');
-    echo '<a href="' . $full_image_url[0] . '" title="' . the_title_attribute('echo=0') . '" >';
-    the_post_thumbnail('full');
-    echo '</a>';
- }
- ?>
+			<div class="title_image">
+				<?php
+							if ( has_post_thumbnail()) {
+							$full_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full');
+							echo '<href="' . $full_image_url[0] . '" title="' . the_title_attribute('echo=0') . '" >';
+							the_post_thumbnail('full');
+							echo '';
+							}
+							?>
+			</div>
  
  
 
-			<h1><?php the_title(); ?></h1>
+			<h1 class="title"><?php the_title(); ?></h1>
 			
 		</div>
 		
