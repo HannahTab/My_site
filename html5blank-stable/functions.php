@@ -11,14 +11,6 @@
 
 // Load any external files you have here
 
-// LOAD BX SLIDER
-// *********************************************************
-function loadbxslider()
-{
-    wp_enqueue_style('bxstyle', '/wp-content/themes/yourtheme/bx_styles/bx_styles.css');
-    wp_enqueue_script('bxscript', '/wp-content/themes/yourtheme/js/jquery.bxSlider.min.js', array('jquery'));
-}
-add_action('init', 'loadbxslider');
 
 /*------------------------------------*\
 	Theme Support
@@ -72,7 +64,7 @@ if (function_exists('add_theme_support'))
 	
 	function wpb_add_google_fonts() {
  
-wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=Nunito|Open+Sans', false ); 
+wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=Nunito%7cOpen+Sans', false ); 
 }
 }
 
